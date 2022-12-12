@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage x:Class="Calculator.MainPage"
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+   
+             BackgroundColor="LightGoldenrodYellow">
+
+
+    <VerticalStackLayout>
+        <Grid Padding="16"
+          RowDefinitions="2*,*,*,*,*,*" 
+          ColumnDefinitions="*,*,*,*"
+              RowSpacing="4"
+              ColumnSpacing="4"
+          >
+           
+            <Label x:Name="CurrentCalculation"
+               FontSize="22"
+               LineBreakMode="NoWrap"
+               Grid.ColumnSpan="4"
+               Text=""
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Start"
+               BackgroundColor="White"
+               TextColor="Black"
+               Grid.Row="0"/>
+
+        <Label x:Name="resultText"
+               FontSize="64" FontAttributes="Bold" Text="0"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" 
+               BackgroundColor="White"
+               TextColor="Black"/>
+
+        <BoxView BackgroundColor="{StaticResource Black}" HeightRequest="1"
+                 Grid.Row="0" VerticalOptions="End"
+                 Grid.ColumnSpan="4"
+                 />
+
+        <Button Text="Buffalo Sauce" Grid.Row="1" Grid.Column="0"
+               Clicked="OnSelectNumber" BackgroundColor="Beige" BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Tangy Sauce" Grid.Row="1" Grid.Column="1"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Ranch" Grid.Row="1" Grid.Column="2"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+        <Button Text="Burger" Grid.Row="2" Grid.Column="0"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Pizza" Grid.Row="2" Grid.Column="1"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Sandwich" Grid.Row="2" Grid.Column="2"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+        <Button Text="Chicken" Grid.Row="3" Grid.Column="0"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Milk" Grid.Row="3" Grid.Column="1"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Wine" Grid.Row="3" Grid.Column="2"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+        <Button Text="Beef" Grid.Row="4" Grid.Column="0"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Bacon" Grid.Row="4" Grid.Column="1"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Cheese Burger" Grid.Row="4" Grid.Column="2"
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+        <Button Text="Pepsi" Grid.Row="5" Grid.Column="0" 
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Coke" Grid.Row="5" Grid.Column="1" 
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Mountain Dew" Grid.Row="5" Grid.Column="2" 
+              Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+        <Button Text="Salad" Grid.Row="1" Grid.Column="3"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+            <Button Text="Cajun Potato" Grid.Row="2" Grid.Column="3"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="French Fries" Grid.Row="3" Grid.Column="3"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+        <Button Text="Crispy Corn" Grid.Row="4" Grid.Column="3"
+               Clicked="OnSelectNumber" BackgroundColor="Beige"  BorderColor="Black" BorderWidth="2" TextColor="Black"/>
+
+
+
+        <Button Text="8 Piece" Grid.Row="5" Grid.Column="3" 
+               Clicked="OnSelectNumber" BackgroundColor="Beige" BorderWidth="2" BorderColor="Black" TextColor="Black"/>
+
+    </Grid>
+    </VerticalStackLayout>
+</ContentPage>

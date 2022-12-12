@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.HistoryPage"
+             BackgroundColor="LightGoldenrodYellow"
+             NavigatedTo="Button_Clicked"
+             
+            >
+
+
+    <VerticalStackLayout Spacing="5">
+
+        
+        <Button Text="Cancel" Clicked="Clear_Clicked" TextColor="Black" HorizontalOptions="Center" CornerRadius="20"  BackgroundColor="Beige" WidthRequest="200"/>
+        <ListView ItemsSource="{Binding history}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label  Text="{Binding Calc}" TextColor="{DynamicResource Black}" ></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="total" Text="Total" Clicked="Clear_Clicked" TextColor="Black" HorizontalOptions="Center" CornerRadius="20"  BackgroundColor="Beige" WidthRequest="200" />
+
+    </VerticalStackLayout>
+</ContentPage>
