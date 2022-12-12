@@ -1,5 +1,7 @@
 # Project-5
 Restaurant Billing System
+# Group 42
+
 # Contributors
 Pooja Akkala
 Sreeja Vuyyala
@@ -9,7 +11,7 @@ Sreeja Vuyyala has worked upon MVVM and Bill Page
 # Github Repository Link
 https://github.com/PoojaAkkala/Project-5.git
 # Screenshots
-![Screenshot 2022-12-12 084625](https://user-images.githubusercontent.com/114852243/207076802-5ad4dfff-90c2-4cbe-9ca4-e09856d2bdef.png)
+![Screenshot 2022-12-12 084427](https://user-images.githubusercontent.com/114852243/207080681-98d10306-ad54-48ec-9925-43f690f5520d.png)
 ![Screenshot 2022-12-12 084505](https://user-images.githubusercontent.com/114852243/207076839-14ea115c-64a7-4922-98b9-5b962a64e78a.png)
 ![Screenshot 2022-12-12 084533](https://user-images.githubusercontent.com/114852243/207076851-a92572ed-fe4a-492c-a930-f6bc86086de7.png)
 ![Screenshot 2022-12-12 084551](https://user-images.githubusercontent.com/114852243/207076872-77b4fc34-f2d8-4700-829e-63e5c22a7b09.png)
